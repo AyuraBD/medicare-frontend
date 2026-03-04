@@ -1,0 +1,19 @@
+export interface ApiResponse<TData = unknown>{
+  sucess:boolean,
+  message: string,
+  data: TData,
+  meta?: PaginationMeta
+}
+
+export interface PaginationMeta {
+  page: number
+    limit: number
+    total: number
+    totalPage: number
+}
+
+export interface ApiErrorResponse {
+  success: boolean;
+  message: string;
+}
+
