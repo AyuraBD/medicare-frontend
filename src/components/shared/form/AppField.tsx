@@ -53,11 +53,9 @@ const AppField = ({
 
         <div className="relative">
             {
-                prepend && (
-                <div className="absolute inset-y-0 left-0 items-center pl-3 pointer-events-none z-10">
+                prepend && (<div className="absolute inset-y-0 left-0 items-center pl-3 pointer-events-none z-10">
                     {prepend}
-                </div>
-                )
+                </div>)
             }
 
             <Input
